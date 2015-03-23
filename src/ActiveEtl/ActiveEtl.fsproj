@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Assembly.fs" />
     <Compile Include="Collections.fs" />
+    <Compile Include="DataRecord.fs" />
+    <Compile Include="ResultReader.fs" />
     <Compile Include="DynamicSql.fs" />
     <Compile Include="DataReader.fs" />
     <Compile Include="Connections.fs" />
@@ -56,7 +58,6 @@
     <Compile Include="Types.fs" />
     <Compile Include="Activities.fs" />
     <Compile Include="Etl.fs" />
-    <Compile Include="Library.fs" />
     <None Include="Script.fsx" />
     <None Include="paket.references" />
     <None Include="paket.template" />

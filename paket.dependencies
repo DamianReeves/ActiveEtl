@@ -10,8 +10,6 @@ nuget Insight.Database
 nuget Insight.Database.Providers.OracleManaged
 nuget Chessie
 nuget odp.net.managed
-nuget xunit
-nuget xunit.runner.visualstudio
 nuget FluentAssertions
 nuget FakeItEasy
 nuget FSharp.Core
@@ -20,5 +18,6 @@ nuget Akka
 nuget Suave
 nuget FSharp.Data
 nuget RegexProvider
+nuget NUnitTestAdapter
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx

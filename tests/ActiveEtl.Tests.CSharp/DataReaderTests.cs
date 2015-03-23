@@ -10,7 +10,7 @@ using Eleven19.ActiveEtl.Data;
 using Eleven19.ActiveEtl.Reflection;
 using FluentAssertions;
 using Insight.Database;
-using Xunit;
+using NUnit.Framework;
 
 namespace ActiveEtl.Tests.CSharp
 {
@@ -28,7 +28,7 @@ namespace ActiveEtl.Tests.CSharp
                 TestDb = ConfigurationManager.ConnectionStrings["TestDb.SqlServer"];
             }
 
-            [Fact]
+            [Test]
             public void GetColumnInfoShouldReturnColumnInfoWithTheCorrectColumnNames()
             {
                 var expectedColumnNames = new[] {"TaskId","Name","Description","Completed"};

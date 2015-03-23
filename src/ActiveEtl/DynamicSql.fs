@@ -41,3 +41,10 @@ type DynamicDataRow(dataRow:DataRow) =
   member private x.Row = dataRow
   static member (?) (dr:DynamicDataRow, name:string) : 'R = 
     unbox (dr.Row.[name])
+
+[<AutoOpen>]
+module DataRow =
+  let (?) (row:DataRow) (columnName:string) = 
+    unbox row.[columnName]
+  let (?<-) (row:DataRow) (columnName:string) value  = 
+    row.[columnName] <- value
